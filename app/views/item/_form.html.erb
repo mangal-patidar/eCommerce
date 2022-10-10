@@ -1,0 +1,15 @@
+  
+  <%= form_with model: @item, local: true do |f| %>
+    <p>
+      <%= f.label :Name %><br/>
+      <%= f.text_field :item_name %>
+    </p>
+    <p>
+      <%= f.label :Price %><br/>
+      <%= f.number_field :item_price %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  
+  <% end %>
